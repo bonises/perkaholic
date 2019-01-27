@@ -47,7 +47,14 @@ table {
     border-spacing: 0;
 }
 /***********************^CSS-RESET^************************/
+/***********************standard css***********************/
+.border{
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+/***********************END*-standard css-*END***********************/
 /***********************MEDIAQUERIES*************************************/
+
 @media screen and (max-width:1920px) { 
 }
 @media screen and (max-width:1800px) { 
