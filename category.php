@@ -12,16 +12,12 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
-	<div id="index-grid-container">
+	<div id="category-grid-container">
 		<header id="" class="head">
-			<?php require_once "header.php"; ?>
+header
 		</header>
 		<nav id="" class="menu">
-			<ul>
-				<a href="#"><li class="li-inline">Cupcakes</li></a>
-				<a href="#"><li class="li-inline">Coffe</li></a>
-				<a href="#"><li class="li-inline">Sweets</li></a>
-			</ul>
+nav
 		</nav>
 		<main id="" class="main">
 main
