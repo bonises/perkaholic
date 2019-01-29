@@ -15,19 +15,37 @@ blockquote:before, blockquote:after,q:before, q:after {content: ''; content: non
 table {border-collapse: collapse; border-spacing: 0;}
 /***********************^CSS-RESET^************************/
 /***********************standard css***********************/
-/*BEGIN HEADER*/
-    .head1{ grid-area: title; background-color: #FF0000;}
-    .head2{ grid-area: image; background-color: #00FF00;}
+/*BEGIN HEADER*************************************************************************************/
+    .head1{ grid-area: title;
+        text-align: center;
+        background-color: #FF0000;
+        display: none;
+    }
+    .head2{ grid-area: image;
+        position: relative;
+        margin: 0 auto 0 auto;
+        width: 60%;
+        background-color: #FFF;}
     .head3{ grid-area: cart; background-color: #0000FF;}
+    .head2 > #header-pinup{
+        max-width: 100%;
+        height: auto;
+    }
     header{
         display: grid;
         grid-template-areas: 
-            'title image cart';
-        grid-gap: 0px;
+            'image'
+            'title';
 
+
+        grid-gap: 0px;
+        /*overflow: hidden;*/
     }
-/*END HEADER*/
-/*BEGIN INDEX*/
+    p#header-title{
+        font-size: 5em;
+    }
+/*END HEADER*************************************************************************************/
+/*BEGIN INDEX*************************************************************************************/
     .head { grid-area: header; }
     .menu { grid-area: menu; }
     .main { grid-area: main; }
@@ -43,10 +61,25 @@ table {border-collapse: collapse; border-spacing: 0;}
             'footer';
         grid-gap: 0px;
         background-color: #FFF;
-        padding: 10px;
     }
-/*END INDEX*/
-/*BEGIN CATEGORY*/
+    .main-cover{
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 1000px;
+    }
+    div#main-cover-w1{
+        background-image: url('img/w1.png');
+    }
+    div#main-cover-w2{
+        background-image: url('img/w2.png');
+    }
+    div#main-cover-w3{
+        background-image: url('img/w3.png');
+    }
+/*END INDEX*************************************************************************************/
+/*BEGIN CATEGORY*************************************************************************************/
     #category-grid-container{
         display: grid;
         grid-template-areas:
@@ -57,7 +90,7 @@ table {border-collapse: collapse; border-spacing: 0;}
         background-color: #FFF;
         padding: 10px;
     }
-/*END CATEGORY*/
+/*END CATEGORY*************************************************************************************/
 .li-inline{
     display: inline;
 }
@@ -82,6 +115,35 @@ body * {
 @media screen and (max-width:1320px) { 
 }
 @media screen and (max-width:1200px) { 
+    /*BEGIN HEADER*************************************************************************************/
+    .head1{ grid-area: title;
+        background-color: #FF0000;}
+    .head2{ grid-area: image;
+
+        background-color: #00FF00;}
+    .head3{ grid-area: cart;
+
+        background-color: #0000FF;}
+    .head2 > #header-pinup{
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            'title'
+            'image'
+            'cart';
+        grid-gap: 0px;
+        /*overflow: hidden;*/
+    }
+    p#header-title{
+        font-size: 10em;
+    }
+    /*END HEADER*************************************************************************************/
+/*BEGIN INDEX*************************************************************************************/
     #index-grid-container{
         display: grid;
         grid-template-areas:
@@ -94,6 +156,9 @@ body * {
         background-color: #FFF;
         padding: 10px;
     }
+/*END INDEX*************************************************************************************/
+/*BEGIN CATEGORY*************************************************************************************/
+
     #category-grid-container{
     display: grid;
     grid-template-areas:
@@ -105,7 +170,9 @@ body * {
     grid-gap: 0px;
     background-color: #FFF;
     padding: 10px;
-}
+    }
+/*BEGIN CATEGORY*************************************************************************************/
+
 
 }
 @media screen and (max-width:1080px) { 

@@ -18,19 +18,21 @@
 		</header>
 		<nav id="" class="menu">
 			<ul>
-				<a href="#"><li class="li-inline">Cupcakes</li></a>
-				<a href="#"><li class="li-inline">Coffe</li></a>
-				<a href="#"><li class="li-inline">Sweets</li></a>
+				<a href="#" tabindex="2"><li class="li-inline">Cupcakes</li></a>
+				<a href="#" tabindex="3"><li class="li-inline">Coffe</li></a>
+				<a href="#" tabindex="4"><li class="li-inline">Sweets</li></a>
 			</ul>
 		</nav>
 		<main id="" class="main">
-main
+			<div id="main-cover-w1" class="main-cover"></div>
+			<div id="main-cover-w2" class="main-cover"></div>
+			<div id="main-cover-w3" class="main-cover"></div>
 		</main>
 		<aside id="" class="right">
 aside
 		</aside>
 		<footer id="" class="foot">
-footer
+			<?php require_once "footer.php"; ?>
 		</footer>
 	</div>
 </body>
