@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+ http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -34,7 +34,7 @@ table {border-collapse: collapse; border-spacing: 0;}
     header{
         display: grid;
         grid-template-areas: 
-            'image'
+            '. image .'
             'title';
 
 
@@ -78,6 +78,27 @@ table {border-collapse: collapse; border-spacing: 0;}
     div#main-cover-w3{
         background-image: url('img/w3.png');
     }
+    /*.li-inline{
+        display: inline;
+    }*/
+    a:hover{
+        background-color: #000;
+    }
+    #product-category-links{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+        padding: 0 20% 0 20%;
+        text-align: center;
+        font-size: 4em;
+    }
+    nav{
+        background-image: url('img/bar.jpg');
+        background-repeat: repeat-x;
+    }
+
 /*END INDEX*************************************************************************************/
 /*BEGIN CATEGORY*************************************************************************************/
     #category-grid-container{
@@ -91,9 +112,7 @@ table {border-collapse: collapse; border-spacing: 0;}
         padding: 10px;
     }
 /*END CATEGORY*************************************************************************************/
-.li-inline{
-    display: inline;
-}
+
 
 body * {
     border: 1px solid #000;
@@ -188,4 +207,4 @@ body * {
 @media screen and (max-width:480px) { 
 
 }
-/****************************************************************************/
+/***************************************************************************

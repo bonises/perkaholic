@@ -17,10 +17,17 @@
 			<?php require_once "header.php"; ?>
 		</header>
 		<nav id="" class="menu">
-			<ul>
-				<a href="#" tabindex="2"><li class="li-inline">Cupcakes</li></a>
-				<a href="#" tabindex="3"><li class="li-inline">Coffe</li></a>
-				<a href="#" tabindex="4"><li class="li-inline">Sweets</li></a>
+			<ul id="product-category-links">
+				<li class="li-inline product-category-1"><a href="#" tabindex="2">Cupcakes</a></li>
+				<li class="li-inline product-category-2"><a href="#" tabindex="3">Coffee</a></li>
+				<li class="li-inline product-category-3"><a href="#" tabindex="4">Sweets</a></li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+
+				<!-- <a href="#" tabindex="2" class="product-category-1"><li class="li-inline">Cupcakes</li></a>
+				<a href="#" tabindex="3" class="product-category-2"><li class="li-inline">Coffe</li></a>
+				<a href="#" tabindex="4" class="product-category-3"><li class="li-inline">Sweets</li></a> -->
 			</ul>
 		</nav>
 		<main id="" class="main">
