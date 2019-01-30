@@ -16,28 +16,33 @@ table {border-collapse: collapse; border-spacing: 0;}
 /***********************^CSS-RESET^************************/
 /***********************standard css***********************/
 /*BEGIN HEADER*************************************************************************************/
-    .head1{ grid-area: title;
+    .head1{ grid-area: cart;
         text-align: center;
         background-color: #FF0000;
-        display: none;
     }
     .head2{ grid-area: image;
         position: relative;
         margin: 0 auto 0 auto;
         width: 60%;
         background-color: #FFF;}
-    .head3{ grid-area: cart; background-color: #0000FF;}
+    .head3{ grid-area: login; background-color: #0000FF;}
     .head2 > #header-pinup{
         max-width: 100%;
         height: auto;
     }
+    .head4{
+        grid-area: search;
+        padding: 0 20% 0 20%;
+    }
+    .head4 > input{
+        width: 100%;
+    }
     header{
         display: grid;
         grid-template-areas: 
+            'login search cart'
             '. image .'
-            'title';
-
-
+            '. title .';
         grid-gap: 0px;
         /*overflow: hidden;*/
     }
@@ -69,6 +74,31 @@ table {border-collapse: collapse; border-spacing: 0;}
         width: 100%;
         height: 1000px;
     }
+    /*<img src="img/catimg.jpg" class="cat-img1"/>
+                <img src="img/catimg.jpg" class="cat-img2"/>
+                <div class="cat-info" >
+                    <h2 class="cat-title"> Lorem Ipsum</h2>
+                    <p class="cat-text">*/
+    .cat-img1{
+        grid-area: catimg1;
+    }
+    .cat-img2{
+        grid-area: catimg2;
+    }
+    .cat-info{
+        grid-area: info;
+    }
+    .main-cover{
+        display: grid;
+        /*grid-template-columns: repeat(9, 1fr);*/
+        /*grid-template-rows: repeat(4, 1fr);*/
+
+        grid-template-areas: 
+        '. . . . . . . . .'
+        '. catimg1 catimg2 . info info info info .'
+        '. catimg1 catimg2 . info info info info .'
+        '. . . . info info info info .';
+    }
     div#main-cover-w1{
         background-image: url('img/w1.png');
     }
@@ -78,6 +108,13 @@ table {border-collapse: collapse; border-spacing: 0;}
     div#main-cover-w3{
         background-image: url('img/w3.png');
     }
+
+    div#main-cover-over1{
+        height: 60px;
+    }
+    div#main-cover-over2{
+        height: 60px;
+    } 
     /*.li-inline{
         display: inline;
     }*/
@@ -98,7 +135,12 @@ table {border-collapse: collapse; border-spacing: 0;}
         background-image: url('img/bar.jpg');
         background-repeat: repeat-x;
     }
-
+    .category-div{
+        width: 75%;
+        height: 75%;
+        background-color: #FFF;
+        margin-left: 12.5%;
+    }
 /*END INDEX*************************************************************************************/
 /*BEGIN CATEGORY*************************************************************************************/
     #category-grid-container{
@@ -112,6 +154,20 @@ table {border-collapse: collapse; border-spacing: 0;}
         padding: 10px;
     }
 /*END CATEGORY*************************************************************************************/
+/*BEGIN FOOTER**********************************************************************************/
+.foot{
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+/**/
+}
+.footer-info{
+    padding: 10% 10% 10% 10%;
+}
+.footer-info-list{
+    padding: 0;
+}
+/*END FOOTER**********************************************************************************/
 
 
 body * {
@@ -135,31 +191,22 @@ body * {
 }
 @media screen and (max-width:1200px) { 
     /*BEGIN HEADER*************************************************************************************/
-    .head1{ grid-area: title;
-        background-color: #FF0000;}
-    .head2{ grid-area: image;
-
-        background-color: #00FF00;}
-    .head3{ grid-area: cart;
-
-        background-color: #0000FF;}
+    
     .head2 > #header-pinup{
         max-width: 100%;
         height: auto;
     }
     header{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-            'title'
-            'image'
-            'cart';
+        grid-template-columns: repeat(2, 1fr);
+        /*grid-template-rows: repeat(3, 1fr);*/
+        /*grid-template-rows: minmax(50px, 800px);*/
+        grid-template-areas:
+            'login cart'
+            'search search'
+            'image image';
         grid-gap: 0px;
         /*overflow: hidden;*/
-    }
-    p#header-title{
-        font-size: 10em;
     }
     /*END HEADER*************************************************************************************/
 /*BEGIN INDEX*************************************************************************************/

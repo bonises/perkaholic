@@ -31,8 +31,22 @@
 			</ul>
 		</nav>
 		<main id="" class="main">
-			<div id="main-cover-w1" class="main-cover"></div>
-			<div id="main-cover-w2" class="main-cover"></div>
+			
+			<div id="main-cover-w1" class="main-cover">
+				<img src="img/catimg.jpg" class="cat-img1"/>
+				<img src="img/catimg.jpg" class="cat-img2"/>
+				<div class="cat-info" >
+					<h2 class="cat-title"> Lorem Ipsum</h2>
+					<p class="cat-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue urna vel neque vulputate, a molestie augue semper. Suspendisse a nunc et felis venenatis faucibus eu dapibus lectus. Aenean vel vulputate ligula, ac vestibulum orci. Vivamus eget vulputate dui, eget ornare sapien. Morbi ligula erat, sollicitudin et nibh nec, ullamcorper molestie nisi. Vivamus maximus egestas tellus a luctus. Donec a ipsum nunc. Ut enim turpis, lobortis sit amet justo et, tristique mollis ipsum. Aenean sodales luctus aliquet. Mauris rhoncus ultricies leo, a interdum elit luctus in. Nam placerat rutrum ornare. Proin maximus commodo facilisis. Nam vestibulum magna id tellus pulvinar pellentesque. Morbi ac fermentum odio.
+					</p>
+				</div>
+			</div>
+			<div id="main-cover-over1" class="main-cover"></div>
+			<div id="main-cover-w2" class="main-cover">
+				
+			</div>
+			<div id="main-cover-over2" class="main-cover"></div>
 			<div id="main-cover-w3" class="main-cover"></div>
 		</main>
 		<aside id="" class="right">
