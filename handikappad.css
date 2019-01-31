@@ -1,0 +1,526 @@
+/*http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0;padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+/***********************^CSS-RESET^************************/
+/***********************standard css***********************/
+body * {
+    font-family: verdana;
+}
+ .handikappad{
+    display: none;
+ }
+/*BEGIN HEADER*************************************************************************************/
+.head1{ grid-area: cart;
+    text-align: left;
+    background-color: #b3b3b3;
+
+}
+.head2{ grid-area: image;
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 60%;
+}
+.head2 > #header-pinup{
+    max-width: 100%;
+    height: auto;
+}
+.head3{ 
+    background-color: #b3b3b3;
+    grid-area: login;
+}
+
+.head4{
+    background-color: #b3b3b3;
+    grid-area: search;
+    padding: 0 20% 0 20%;
+}
+.head4 > input{
+    font-size: 1em;
+
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+}
+header{
+    font-size: 2em;
+    display: grid;
+    grid-template-areas: 
+    'login search cart'
+    '. image .';
+    grid-gap: 0px;
+    /*overflow: hidden;*/
+}
+p#header-title{
+    font-size: 5em;
+}
+/*END HEADER*************************************************************************************/
+/*BEGIN INDEX*************************************************************************************/
+.head { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.foot { grid-area: footer; }
+#index-grid-container{
+    display: grid;
+    grid-template-areas:
+    'header'
+    'menu'
+    'main'
+    'right'
+    'footer';
+    grid-gap: 0px;
+    background-color: #FFF;
+}
+/*    --------------------------------------------CATECORY-----CUPCAKE-----------------START*/
+.main-cover{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    padding-right: 10%;
+
+    padding-left: 10%;   
+
+
+    grid-template-areas: 
+
+    'cupcake'
+    ;
+    display: grid;
+    align-items: center;
+}
+
+.cat-img1{
+    width: 100%;
+    grid-area: catimg1;
+    ;
+
+}
+.cat-img2{
+    width: 100%;       
+
+    grid-area: catimg2;
+
+}
+.cat-info{
+    width: 50%;   
+    padding-bottom: 30px;
+
+    text-align: left;
+
+    height: 80%;
+    font-family: 'Karla';
+    font-size: 1.5em;
+
+
+    grid-area: info;
+
+
+    background-color: white;
+
+
+
+}
+
+
+.cat-title{
+    font-size: 3em;                     
+    font-family: 'Karla';
+}
+.cat-text{
+
+    font-family: 'Karla';
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+
+
+}
+
+
+#coffe {
+    background-color: #fff;
+
+}
+#crisp {
+    background-color: #fff;
+
+}
+
+.categoryCupcake{
+
+
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    grid-area: cupcake;
+    justify-items: center;
+    align-items: center;
+
+    display: grid;
+
+    /*grid-template-columns: repeat(9, 1fr);*/
+    /*grid-template-rows: repeat(4, 1fr);*/
+
+    grid-template-areas: 
+
+
+    ' . . . info info'
+    ' . catimg1 catimg2 info info'
+    ' . catimg1 catimg2 info info'
+    ' . . . info info';
+}
+
+}
+.main-cover{
+
+
+
+
+}
+
+
+div#main-cover-w1{
+    background-color: #ebebeb;
+}
+div#main-cover-w2{
+    background-color: #ebebeb;
+}
+div#main-cover-w3{
+    background-color: #ebebeb;
+}
+/* -----------------------------------------------------------KATEGORIER---END*/
+
+div#main-cover-over1{
+    height: 60px;
+}
+div#main-cover-over2{
+    height: 60px;
+} 
+#product-category-links{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 0 20% 0 20%;
+    text-align: left;
+    font-size: 4em;
+}
+nav{
+    padding: 20px 0 20px 0;
+    background-color: #b3b3b3;
+}
+.category-div{
+    width: 75%;
+    height: 75%;
+    background-color: #FFF;
+    margin-left: 12.5%;
+}
+
+/*END INDEX*************************************************************************************/
+/*BEGIN FOOTER**********************************************************************************/
+.foot{
+    background-color: #b3b3b3;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /**/
+
+}
+.footer-info{
+    border-left: 1px solid #000;
+    padding: 10% 10% 10% 10%;
+}
+.footer-info-list{
+    padding: 0;
+}
+h6{
+    font-size: 1em;
+}
+/*END FOOTER**********************************************************************************/
+/* unvisited link */
+a:link {
+    margin: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ff6f69;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 4px;
+
+}
+
+/* selected link */
+a:active {
+    color: #ff6f69;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 4px;
+}
+a:focus {
+    color: #ff6f69;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 4px;
+}
+body{
+    margin: 0;
+}
+/***********************END*-standard css-*END***********************/
+/***********************MEDIAQUERIES*************************************/
+
+@media screen and (max-width:1920px) { 
+}
+@media screen and (max-width:1800px) { 
+}
+@media screen and (max-width:1680px) { 
+}
+@media screen and (max-width:1560px) { 
+}
+@media screen and (max-width:1440px) { 
+}
+@media screen and (max-width:1320px) { 
+}
+@media screen and (max-width:1200px) { 
+    /*BEGIN HEADER*************************************************************************************/
+    .head1{ grid-area: cart;
+        text-align: left;
+    }
+    .head2{ grid-area: image;
+        position: relative;
+        margin: 0 auto 0 auto;
+        width: 60%;
+    }
+    .head2 > #header-pinup{
+        max-width: 100%;
+        height: auto;
+    }
+    .head3{ 
+        text-align: left;
+
+        grid-area: login;
+    }
+
+    .head4{
+        grid-area: search;
+        padding: 0 20% 0 20%;
+    }
+    .head4 > input{
+        font-size: 1em;
+
+        margin: 20px 0px 20px 0px;
+        width: 90%;
+    }
+    header{
+        font-size: 2em;
+        display: grid;
+        grid-template-areas: 
+        'login cart'
+        'search search'
+        'image image';
+        grid-gap: 0px;
+        /*overflow: hidden;*/
+    }
+    p#header-title{
+        font-size: 5em;
+    }
+    /*END HEADER*************************************************************************************/
+    /*BEGIN INDEX*************************************************************************************/
+    #index-grid-container{
+        display: grid;
+        grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'right'
+        'footer';
+        grid-gap: 0px;
+        background-color: #FFF;
+        /*padding: 10px;*/
+    }
+    #product-category-links{
+        grid-template-columns: 1fr;
+    }
+    /*END INDEX*************************************************************************************/
+    /*BEGIN CATEGORY*************************************************************************************/
+
+    /*BEGIN CATEGORY*************************************************************************************/
+    /*BEGIN FOOTER**********************************************************************************/
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 2em;
+    }
+    .footer-info{
+        border-bottom: 1px solid #000;
+        padding: 10% 5% 10% 5%;
+
+    }
+    .footer-info-list{
+        padding: 0;
+    }
+    /*END FOOTER**********************************************************************************/
+    html, body{
+        margin: 0;
+    }
+
+    /* -----------------------------------------------------------KATEGORIER---START*/
+
+
+    .categoryCupcake{
+
+
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+        grid-area: cupcake;
+
+
+
+        display: grid;
+
+        /*grid-template-columns: repeat(9, 1fr);*/
+        /*grid-template-rows: repeat(4, 1fr);*/
+
+        grid-template-areas: 
+
+
+
+        'catimg1 catimg2'
+        'info info';
+    }
+
+    .cat-img1{
+
+        grid-area: catimg1;
+        ;
+
+    }
+    .cat-img2{
+
+
+        grid-area: catimg2;
+
+    }
+    .cat-info{
+        padding-top: 0px;
+        align-items: start;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 1.2em;
+    }
+
+    .cat-title{
+
+        padding-top: 0px;
+
+    }
+
+    /* -----------------------------------------------------------KATEGORIER---END*/
+
+
+
+
+
+
+
+}
+@media screen and (max-width:1080px) { 
+    .head4{
+        grid-area: search;
+        padding: 0 15% 0 15%;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 3em;
+    }
+
+    .footer-info-list{
+        padding: 0;
+        border-bottom: 1px solid #000;
+    }
+}
+@media screen and (max-width:960px) { 
+
+
+    .cat-img1 {
+        display: none;
+    }
+    .cat-img2 {
+        width: 60%;
+        padding: 0px;
+    }
+    .categoryCupcake{
+
+
+        width: 95%;
+        height: 100%;
+        background-color: #FFF;
+        grid-area: cupcake;
+
+
+
+        display: grid;
+
+        /*grid-template-columns: repeat(9, 1fr);*/
+        /*grid-template-rows: repeat(4, 1fr);*/
+
+        grid-template-areas: 
+        'catimg2'
+        'info ';
+    }
+
+
+}
+@media screen and (max-width:840px) { 
+    .head4{
+        grid-area: search;
+        padding: 0 5% 0 5%;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:720px) { 
+
+}
+@media screen and (max-width:600px) { 
+}
+@media screen and (max-width:480px) { 
+
+}
+/***************************************************************************/

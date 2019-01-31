@@ -79,42 +79,126 @@ p#header-title{
     grid-gap: 0px;
     background-color: #FFF;
 }
-.main-cover{
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 1000px;
-}
-                    .cat-img1{
-                        grid-area: catimg1;
-                    }
-                    .cat-img2{
-                        grid-area: catimg2;
-                    }
-                    .cat-info{
-                        grid-area: info;
-                    }
-                    .main-cover{
-                        display: grid;
-                        /*grid-template-columns: repeat(9, 1fr);*/
-                        /*grid-template-rows: repeat(4, 1fr);*/
+    /*    --------------------------------------------CATECORY-----CUPCAKE-----------------START*/
+    .main-cover{
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+       
+        height: 1000px;
+        padding-top: 100px;
 
-                        grid-template-areas: 
-                        '. . . . . . . . .'
-                        '. catimg1 catimg2 . info info info info .'
-                        '. catimg1 catimg2 . info info info info .'
-                        '. . . . info info info info .';
-                    }
-                    div#main-cover-w1{
-                        background-image: url('img/w1.png');
-                    }
-                    div#main-cover-w2{
-                        background-image: url('img/w2.png');
-                    }
-                    div#main-cover-w3{
-                        background-image: url('img/w3.png');
-                    }
+        padding-right: 10%;
+
+        padding-left: 10%;   
+
+
+        grid-template-areas: 
+
+        'cupcake'
+        ;
+        display: grid;
+        align-items: center;
+    }
+
+    .cat-img1{
+        width: 100%;
+        grid-area: catimg1;
+        ;
+
+    }
+    .cat-img2{
+        width: 100%;       
+       
+        grid-area: catimg2;
+
+    }
+    .cat-info{
+       width: 50%;   
+       padding-top: 200px;
+
+       text-align: center;
+
+       height: 80%;
+       font-family: 'Karla';
+
+
+       grid-area: info;
+
+
+       background-color: white;
+
+
+
+   }
+
+
+   .cat-title{
+     font-size: 3em;                     
+     font-family: 'Karla';
+ }
+ .cat-text{
+
+   font-family: 'Karla';
+   text-rendering: optimizeLegibility;
+   text-rendering: geometricPrecision;
+
+
+}
+
+
+#coffe {
+   background-color: #613616;
+
+}
+#crisp {
+   background-color: #c7ffdf;
+
+}
+
+.categoryCupcake{
+
+
+    width: 100%;
+    height: 100%;
+    background-color: #fdeac9;
+    grid-area: cupcake;
+    justify-items: center;
+    align-items: center;
+
+    display: grid;
+
+    /*grid-template-columns: repeat(9, 1fr);*/
+    /*grid-template-rows: repeat(4, 1fr);*/
+
+    grid-template-areas: 
+
+
+    ' . . . info info'
+    ' . catimg1 catimg2 info info'
+    ' . catimg1 catimg2 info info'
+    ' . . . info info';
+}
+
+}
+.main-cover{
+
+
+
+
+}
+
+
+div#main-cover-w1{
+    background-image: url('img/w1.png');
+}
+div#main-cover-w2{
+    background-image: url('img/w2.png');
+}
+div#main-cover-w3{
+    background-image: url('img/w3.png');
+}
+  /* -----------------------------------------------------------KATEGORIER---END*/
 
                     div#main-cover-over1{
                         height: 60px;
@@ -144,18 +228,6 @@ p#header-title{
         }
 
         /*END INDEX*************************************************************************************/
-        /*BEGIN CATEGORY*************************************************************************************/
-        #category-grid-container{
-            display: grid;
-            grid-template-areas:
-            'header header header header header header header header header header header header'
-            'menu menu main main main main main main main main right right'
-            'footer footer footer footer footer footer footer footer footer footer footer footer';
-            grid-gap: 0px;
-            background-color: #FFF;
-            padding: 10px;
-        }
-        /*END CATEGORY*************************************************************************************/
         /*BEGIN FOOTER**********************************************************************************/
         .foot{
             background-color: #b3b3b3;
@@ -262,7 +334,7 @@ body{
         font-size: 1em;
 
         margin: 20px 0px 20px 0px;
-        width: 100%;
+        width: 90%;
     }
     header{
         font-size: 2em;
@@ -316,6 +388,68 @@ body{
     html, body{
         margin: 0;
     }
+
+  /* -----------------------------------------------------------KATEGORIER---START*/
+
+
+        .categoryCupcake{
+
+
+            width: 100%;
+            height: 100%;
+            background-color: #fdeac9;
+            grid-area: cupcake;
+
+
+
+            display: grid;
+
+            /*grid-template-columns: repeat(9, 1fr);*/
+            /*grid-template-rows: repeat(4, 1fr);*/
+
+            grid-template-areas: 
+
+
+
+            'catimg1 catimg2'
+            'info info';
+        }
+
+ .cat-img1{
+    
+        grid-area: catimg1;
+        ;
+
+    }
+    .cat-img2{
+              
+      
+        grid-area: catimg2;
+
+    }
+        .cat-info{
+            padding-top: 0px;
+            align-items: start;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            font-size: 1.2em;
+        }
+
+        .cat-title{
+
+           padding-top: 0px;
+
+       }
+
+  /* -----------------------------------------------------------KATEGORIER---END*/
+
+
+
+
+
+
+
 }
 @media screen and (max-width:1080px) { 
     .head4{
@@ -334,14 +468,53 @@ body{
     }
 }
 @media screen and (max-width:960px) { 
+
+
+   .cat-img1 {
+        display: none;
+    }
+    .cat-img2 {
+        width: 60%;
+           padding: 0px;
+    }
+    .categoryCupcake{
+
+         
+            width: 95%      ;
+            height: 100%;
+            background-color: #fdeac9;
+            grid-area: cupcake;
+
+
+
+            display: grid;
+
+            /*grid-template-columns: repeat(9, 1fr);*/
+            /*grid-template-rows: repeat(4, 1fr);*/
+
+            grid-template-areas: 
+
+
+
+            'catimg2'
+            'info ';
+        }
+
+
 }
 @media screen and (max-width:840px) { 
     .head4{
         grid-area: search;
         padding: 0 5% 0 5%;
     }
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 2em;
+    }
 }
 @media screen and (max-width:720px) { 
+    
 }
 @media screen and (max-width:600px) { 
 }

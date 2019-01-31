@@ -28,9 +28,9 @@
 	</ul>
 </div>
 <div class="footer-info">
-	<h6>TITEL</h6>
+	<h6>Tillgänlighet</h6>
 	<ul class="footer-info-list">
-		<li><a href="#" tabindex="314">BLAHHHHH!</a></li>
+		<li><a onclick="handikappad()" tabindex="314">Syndskador!</a></li>
 		<li><a href="#" tabindex="315">BLAHHHHH!</a></li>
 		<li><a href="#" tabindex="316">BLAHHHHH!</a></li>
 		<li><a href="#" tabindex="317">BLAHHHHH!</a></li>
