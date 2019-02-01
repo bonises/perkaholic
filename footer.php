@@ -18,22 +18,19 @@
 	</ul>
 </div>
 <div class="footer-info">
-	<h6>Find us</h6>
+	<h6>USE CASES?</h6>
 	<ul class="footer-info-list">
-		<li><a href="#" tabindex="309">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="310">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="311">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="312">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="313">BLAHHHHH!</a></li>
+		<li><a href="#" tabindex="309">Cheat death</a></li>
+		<li><a href="#" tabindex="310">Beat Harry Potter</a></li>
+		<li><a href="#" tabindex="311">Zombie apocalypse</a></li>
+		<li><a href="#" tabindex="312">Nuclear war</a></li>
+		<li><a href="#" tabindex="313">Find Narnia</a></li>
 	</ul>
 </div>
 <div class="footer-info">
 	<h6>Tillgänlighet</h6>
 	<ul class="footer-info-list">
-		<li><a onclick="handikappad()" tabindex="314">Syndskador!</a></li>
+		<li><a onclick="handikappad()" onkeypress="handikappad()" tabindex="314">Syndskador!</a></li>
 		<li><a href="#" tabindex="315">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="316">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="317">BLAHHHHH!</a></li>
-		<li><a href="#" tabindex="318">BLAHHHHH!</a></li>
 	</ul>
 </div>

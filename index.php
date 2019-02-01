@@ -5,7 +5,7 @@
 		Perkahloic
 	</title>
 	<!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
-	<link rel="stylesheet" type="text/css" href="handikappad.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css" id="css" />
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="Perkaholic" content="Videogame perks for real life">
@@ -28,18 +28,18 @@
 				<a href="#" tabindex="4" class="product-category-3"><li class="li-inline">Sweets</li></a> -->
 			</ul>
 		</nav>
-		<main id="" class="main">
+		<main  class="main">
 			<!--   /* -----------------------------------------------------------KATEGORIER---END*/ -->
 			<div id="main-cover-w1" class="main-cover">
 				<div class="categoryCupcake">
 
-				<img src="img/categoryCupcake.png" class="cat-img1 handikappad"/>
-				<img src="img/categoryTitleCupcake.png" class="cat-img2 handikappad"/>
+				<img src="img/categoryCupcake.png" class="cat-img1 handikappad" alt="cupcake" />
+				<img src="img/categoryTitleCupcake.png" class="cat-img2 handikappad" alt="cupcake" />
 
 				<div class="cat-info" >
 					<h2 class="cat-title"> <a href="http://example.com" tabindex="100"> Cupcake</a></h2>
 					<p class="cat-text">
-						Marshmallow cheesecake chocolate bar danish bear claw danish gummies donut cupcake. Gummi bears gummies icing tart wafer I love. Dragée pudding brownie.
+						Everyone loves cupcakes. Cupcakes are sweet and tasty. Cupcakes are just great. But what would you say if I told you that you could combine cupcakes with perks, perks that can give you superhuman abilities, you wouldn’t believe it right? At Perkaholic this is possible. Buy you perk-stuffed-cupcake now and enjoy life as a superhero.
 					</p>
 				</div>
 			</div>
@@ -55,13 +55,14 @@
 
 			<div id="main-cover-w2" class="main-cover">
 						<div id="coffe"   class="categoryCupcake">
-				<img src="img/categoryCoffe.png" class="cat-img1 handikappad"/>
-				<img src="img/categoryTitleCoffe.png" class="cat-img2 handikappad"/>
+				<img src="img/categoryCoffe.png" class="cat-img1 handikappad" alt="kaffe" />
+				<img src="img/categoryTitleCoffe.png" class="cat-img2 handikappad" alt="kaffe" />
 				
 				<div class="cat-info" >
 					<h2 class="cat-title"> <a href="http://example.com" tabindex="101"> Coffe</a></h2>
 					<p class="cat-text">
-						Marshmallow cheesecake chocolate bar danish bear claw danish gummies donut cupcake. Gummi bears gummies icing tart wafer I love. Dragée pudding brownie.
+						The best way to start your day has to be waking up to the smell of freshly brewed coffee. But wait, why not combine your favorite smell in the morning with some perks, like being able to speed up your reading and finish all those books you didn’t finish last year in less than an hour. At Percaholic this is possible. Buy you perk-brewed-coffe now and enjoy life at the same speed as a super computer.
+
 					</p>
 				</div>
 			</div>
@@ -72,13 +73,13 @@
 
 			<div id="main-cover-w3" class="main-cover">
 						<div id="crisp" class="categoryCupcake">
-				<img src="img/categoryCrisps.png" class="cat-img1 handikappad"/>
-				<img src="img/categoryTitleCrisps.png" class="cat-img2 handikappad"/>
+				<img src="img/categoryCrisps.png" class="cat-img1 handikappad" alt="crisps" />
+				<img src="img/categoryTitleCrisps.png" class="cat-img2 handikappad" alt="crisps" />
 				
 				<div class="cat-info" >
 					<h2 class="cat-title"> <a href="http://example.com" tabindex="102"> Crisps</a></h2>
 					<p class="cat-text">
-						Marshmallow cheesecake chocolate bar danish bear claw danish gummies donut cupcake. Gummi bears gummies icing tart wafer I love. Dragée pudding brownie.
+						Everyone loves crips. crips are salty and tasty. crips are just great. But what would you say if I told you that you could combine crips with perks, perks that can give you superhuman abilities, you wouldn’t believe it right? At Perkaholic this is possible. Buy you perk-filled-crips now and enjoy life as a superhero.
 					</p>
 				</div>
 			</div>
@@ -91,5 +92,23 @@
 			<?php require_once "footer.php"; ?>
 		</footer>
 	</div>
+	<script type="text/javascript">
+	var funktionsnedsatt = 1;
+	function handikappad(){
+		console.log("RETARD = "+funktionsnedsatt);
+		var css = document.getElementById('css');
+		if (funktionsnedsatt){
+			console.log("handikappad");
+			funktionsnedsatt = 0;
+			css.setAttribute('href','handikappad.css');
+			
+		}else{
+			console.log("inte handikappad");
+			funktionsnedsatt = 1;
+			css.setAttribute('href','style.css');
+			
+		}
+	}
+	</script>
 </body>
 </html>
